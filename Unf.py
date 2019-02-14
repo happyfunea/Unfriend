@@ -127,7 +127,7 @@ class leaf:
                               'confirm':'Konfirmasi'}
                 self._fck_ = self.s.post('https://free.facebook.com/a/removefriend.php', data = self.param)
                 if 'Anda tidak lagi berteman dengan' in self._fck_.content:
-                    print (leaf.count,'.','(INFO): Unfriend Success!|{}'.format(self.x));turu(3)
+                    print leaf.count,'.','(INFO): Unfriend Success!|{}'.format(self.x);turu(3)
                 else:
                     log.error(' (GAGAL): {}'.format(self.x));continue
             except KeyboardInterrupt:
