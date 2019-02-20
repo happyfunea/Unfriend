@@ -87,8 +87,8 @@ class leaf:
                     self.saved.write(c['id']+'\n')
                 except KeyError:
                     continue
-            self.saved.close
-        except KeyError:
+            self.saved.close()
+        except:
             log.error(' Gagal login ea')
         if 'home.php' in self.get.url:
             log.warning(' Login Success!')
